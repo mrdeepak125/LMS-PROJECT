@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Managment System</title>
+    <link rel="stylesheet" href="LMS.css">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="/images/icon/home.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="panel">
+        <ul>
+            <a href="#"><li class="fa fa-home">Home</li></a>
+            <a href="adminlogin.html"><li class="fa fa-user">Admin Login</li></a>
+            <a href="register.html"><li class="fa fa-
+            registered">Register</li></a>
+            <a href="#"><li class="fa fa-user">Login</li></a>
+        </ul>
+</div>
+        <div class="box">
+            <div class="login-box">
+                <i class="fa-solid fa-user" style="color: #9e9e9e;"></i>
+                <h1>Student</h1>
+                <h2>Login</h2>
+                <form action="#">
+                  <div class="user-box">
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="">
+                    <label for="email">E-mail Id</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" class="form-control" id="password" name="password" required placeholder="">
+                    <label for="password">Password</label>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="button" onclick="saveData()" class="btn btn-primary" id="save_btn">LOG IN</button>
+                  </div>
+                </form>
+              </div>
+</body>
+<script src="/js/login.js"></script>
+</html>

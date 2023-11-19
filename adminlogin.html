@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Library management system</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="LMS.css">
+</head>
+<body>
+    <div id="panel">
+        <ul>
+            <a href="/index.html"><li class="fa fa-home">Home</li></a>
+            <a href="#"><li class="fa fa-user">Admin Login</li></a>
+            <a href="/register.html"><li class="fa fa-registered">Register</li></a>
+            <a href="/admin/admindesborad.html"><li class="fa fa-user">Login</li></a>
+        </ul>
+            </div>
+    <main>
+        <div class="box"> 
+            <div class="login-box">
+                <i class="fa-solid fa-user" style="color: #9e9e9e;"></i>
+                <h1>Admin</h1>
+                <h2>Login</h2>
+                <form action="#">
+                  <div class="user-box">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
+                    <label for="email">E-mail Id</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                    <label for="password">Password</label>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="button" onclick="saveData()" class="btn btn-primary" id="save_btn">LOG IN</button>
+                  </div>
+                </form>
+              </div>
+</body>
+<script src="/js/login.js"></script>
+<script>
+  function saveData(){
+    var email = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if(email === "admin@gmail.com")
+    {
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            window.alert(errorMessage);
+        });
+    }
+    
+}
+</script>
+</html>

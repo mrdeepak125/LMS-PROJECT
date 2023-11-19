@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="LMS.css">    
+</head>
+<body>
+  <div id="panel">
+    <ul>
+      <a href="/index.html"><li class="fa fa-home">Home</li></a>
+      <a href="adminlogin.html"><li class="fa fa-user">Admin Login</li></a>
+      <a href="/register.html"><li class="fa fa-registered">Register</li></a>
+      <a href="/index.html"><li class="fa fa-user">Login</li></a>
+    </ul>
+    </div>
+    <div class="box"> 
+        <div class="login-box">
+            <h1>REGISTER</h1>
+            <form action="#">
+              <div class="user-box">
+                <input type="email" class="form-control" id="email" name="email" required >
+                <label for="email">E-mail Id</label>
+              </div>
+              <div class="user-box">
+                <input type="password" class="form-control" id="password" name="password" required >
+                <label for="password">Password</label>
+              </div>
+              <div class="text-center">
+                <button type="button" onclick="saveData()" class="btn btn-primary" id="save_btn">Submit</button>
+              </div>
+            </form>
+          </div>
+</body>
+<script src="/js/register.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <title> ISSUE BOOK </title>
+    <link rel="stylesheet" href="admincss.css">
+</head>
+<body>
+<div class="img">
+    <div class="leftinnerdiv">
+      <a href="admindesborad.html"><Button class="greenbtn"  ><img class="icons" src="/images/icon/book.png" width="30px" height="30px"/>  ADD BOOK</Button></a>
+      <a href="bookreport.html"><Button class="greenbtn" > <img class="icons" src="/images/icon/open-book.png" width="30px" height="30px"/> BOOK REPORT</Button></a>
+      <a href="bookrequest.html"><Button class="greenbtn" ><img class="icons" src="/images/icon/interview.png" width="30px" height="30px"/> BOOK REQUESTS</Button></a>
+      <a href=""><Button class="greenbtn" > <img class="icons" src="/images/icon/monitoring.png" width="30px" height="30px"/> STUDENT REPORT</Button></a>
+      <a href="issuebook.html"><Button class="greenbtn"  > <img class="icons" src="/images/icon/test.png" width="30px" height="30px"/> ISSUE BOOK</Button></a>
+      <a href="issuereport.html"><Button class="greenbtn" > <img class="icons" src="/images/icon/checklist.png" width="30px" height="30px"/> ISSUE REPORT</Button></a>
+      <a href="index.html"><Button class="greenbtn" ><img class="icons" src="/images/icon/logout.png" width="30px" height="30px"/> LOGOUT</Button></a>
+</div>
+<div class="rightinnerdiv">
+    <div id="issuebook" class="left">
+    <Button class="greenbtn" >ISSUE BOOK</Button>
+    <br>
+    <form action="">
+    <label for="bookInput">Book Name:</label><input type="text" name="bookname" id="Book-Name"/>
+    </br><hr>
+    <label for="emailInput">Student E-mail:</label><input  type="text" name="bookdetail" id="emailInput"/></br><hr>
+    <label for="daysInput">Days:</label><input type="text" name="bookaudor" id="daysInput"/></br><hr>
+    <button type="button" onclick="addData()" class="dlt-btn btn-primary btn " id="dlt-btn" > Submit </button>
+    <div>
+</div>
+</div>
+</body>
+</html>
